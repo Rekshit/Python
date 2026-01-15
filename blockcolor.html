@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Use Cases</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #fdfdfd;
+      font-family: Arial, sans-serif;
+    }
+    .circle-container {
+      position: relative;
+      width: 700px;
+      height: 700px;
+      border: 4px solid #111; /* increased thickness and darker */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f9f9f9;
+    }
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200px;
+      height: 200px;
+      border: 4px solid #111; /* increased thickness and darker */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      background: #e6f2ff; /* light blue */
+    }
+    .item {
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border: 3px solid #111; /* increased thickness and darker */
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      font-size: 15px;
+      background: #fefefe;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .item:nth-child(2) { background: #fff0f0; } /* light red */
+    .item:nth-child(3) { background: #f0fff0; } /* light green */
+    .item:nth-child(4) { background: #f9f0ff; } /* light purple */
+    .item:nth-child(5) { background: #f0f8ff; } /* light cyan */
+    .item:nth-child(6) { background: #fffbe6; } /* light yellow */
+    .item:nth-child(7) { background: #f0f0ff; } /* light lavender */
+    .item:nth-child(8) { background: #f0ffff; } /* light aqua */
+    .item:nth-child(9) { background: #fff0f5; } /* light pink */
+    .item img {
+      display: block;
+      margin: 0 auto 8px;
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="circle-container">
+    <div class="center">
+      <div>
+        <img src="https://img.icons8.com/ios/50/000000/blockchain-technology.png" width="50"><br>
+        <h2><strong>Blockchain</strong></h2>
+      </div>
+    </div>
+
+    <div class="item" style="top: 0; left: 50%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/view-file.png" />
+      <h3><strong>Immutable recordkeeping<br>for public data</strong></h3>
+    </div>
+
+    <!-- Move Land registries farther from Identity -->
+    <div class="item" style="top: 15%; left: 88%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/certificate.png" />
+      <h3><strong>Land registries</strong></h3>
+    </div>
+
+    <div class="item" style="top: 50%; left: 100%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/conference-call.png" />
+      <h3><strong>Identity</strong></h3>
+    </div>
+
+    <!-- Move Voting farther from Identity -->
+    <div class="item" style="top: 85%; left: 88%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/ballot.png" />
+      <h3><strong>Voting</strong></h3>
+    </div>
+
+    <div class="item" style="top: 100%; left: 50%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/security-checked.png" />
+      <h3><strong>Investor protections</strong></h3>
+    </div>
+
+    <!-- Move Financial management and budgeting farther from Supply chain management -->
+    <div class="item" style="top: 85%; left: 12%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/budget.png" />
+      <h3><strong>Financial management<br>and budgeting</strong></h3>
+    </div>
+
+    <!-- Move Supply chain management farther from Financial management and Combating misinformation -->
+    <div class="item" style="top: 50%; left: 0%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/supply-chain.png" />
+      <h3><strong>Supply chain<br>management</strong></h3>
+    </div>
+
+    <!-- Move Combating misinformation farther from Supply chain management -->
+    <div class="item" style="top: 15%; left: 12%; transform: translate(-50%, -50%);">
+      <img src="https://img.icons8.com/ios/50/000000/chat-message.png" />
+      <h3><strong>Combating<br>misinformation</strong></h3>
+    </div>
+  </div>
+</body>
+</html>

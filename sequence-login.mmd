@@ -1,0 +1,28 @@
+sequenceDiagram
+    actor Gov as Government/Funding Agency
+    actor Wholesaler as Seed Wholesaler
+    actor Farmer
+    actor CCC as Corn Collection Center
+    actor CPU as Corn Processing Unit
+    actor Dist as Corn Distributor
+    actor Retailer as Corn Retailer
+    actor User as End User
+    participant IPFS
+    participant SC as Ethereum Smart Contract Blockchain
+
+    Farmer ->> Gov: 1. Request for fund allocation
+    Gov ->> Farmer: 2. Verification & fund allocation
+    Gov ->> Wholesaler: 3. Place order for seeds
+    Wholesaler ->> Farmer: 4. Supply seeds
+    Gov ->> Wholesaler: 5. Release payment
+    Farmer ->> IPFS: 6. Send crop growth details
+
+    Farmer ->> CCC: 7. Deliver harvested crop
+    CCC ->> CPU: 8. Send crop for processing
+    CPU ->> Dist: 9. Process & send corn
+    Dist ->> Retailer: 10. Distribute products
+    Retailer ->> User: 11. Sell corn products
+    User ->> Retailer: 12. Purchase corn products
+
+    note over Gov,SC: All transactions verified on Ethereum Smart Contract
+    note over Farmer,IPFS: Crop growth details stored in IPFS
